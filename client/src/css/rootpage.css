@@ -1,0 +1,631 @@
+/* (01) Top Hero Section */
+.top-hero-section{
+    background-color: rgb(255, 255, 255);
+    background-image: url("https://www.wattpad.com/wp-web-assets/build/_assets/topRightPortal-QF27QM47.svg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    padding: 100px 0 40px;
+}
+.top-hero-content{
+    display: flex;
+    margin: 0 auto;
+    padding: 0 10px;
+    width: 960px;
+}
+.top-hero-content>div{
+    max-width: 50%;
+}
+.top-hero-content h2{
+    font-size: 60px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+    margin: 16px 0 30px;
+    color: #ff6122;
+}
+.top-hero-content h3{
+    font-size: 25px;
+    line-height: normal;
+    font-weight: 400;
+    margin: 24px 0 12px;
+    color: #222222;
+}
+.top-hero-content h4{
+    font-size: 19px;
+    line-height: normal;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 20px;
+    color: #6f6f6f;
+}
+.top-hero-content p{
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 40px;
+    color:#6f6f6f;
+}
+.btn-container button{
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    user-select: none;
+    transition: all .5s ease-in-out;
+    position: relative;
+    padding: 5px 25px;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 6px;
+    margin: 3px 5px;
+    color: #fff;
+    background-color: #ff6122;
+    border-color: transparent;
+    min-width: 170px;
+}
+.btn-container button:first-child{
+    margin-left: 0;
+    margin-right: 16px;
+}
+.btn-container button:hover{
+    background: #f94802;
+}
+.hero-img-section{
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+.hero-img-section img{
+    width: 100%;
+    align-self: center;
+}
+
+/* (02) Studio section*/
+.studio-section{
+    background-image: url("https://www.wattpad.com/wp-web-assets/build/_assets/bottomLeftPortal-PDZA4EYD.svg");
+    background-repeat: no-repeat;
+    background-size: auto 90%;
+}
+.see-your-stories{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.see-your-stories h3{
+    margin: 70px 0 40px;
+    color: #222222;
+    font-weight: 700;
+    font-size: 24px;
+}
+.see-story-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 968px;
+}
+.see-story-item{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #222222;
+}
+.studio-data-container{
+    display: flex;
+    margin-top: 80px;
+    max-width: 996px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.data-studio-inner-container{
+    margin-left: 10px;
+}
+.data-studio-inner-container img{
+    vertical-align: middle;
+    margin-right: 50px;
+}
+.data-studio-inner-container h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 12px;
+}
+.data-studio-inner-container p{
+    margin-bottom: 22px;
+    color: #6f6f6f;
+    font-size:16px;
+    max-width: 400px;
+}
+.book-stuio-margin{
+    margin-top: 110px;
+}
+.book-container{
+    text-align: right;
+    margin-right: 50px;
+    margin-top: 30px;
+}
+.book-container h3{
+    margin-right: 45px;
+}
+
+/* (03) Findout */
+.findout{
+    margin: 125px 0;
+    display: flex;
+    justify-content: center;
+}
+.findout-link{
+    color: #222222;
+}
+.findout-link h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* (04) Work section */
+.work-section{
+    padding: 60px 0 0;
+    background-color: #fafafa;
+    color: #222222;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.work-inner-container{
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+.work-inner-container h2{
+    text-align: center;
+    font-weight:600;
+    margin-bottom: 30px;
+    line-height: normal;
+    font-size: 30px;
+}
+.work-inner-container p{
+    margin-bottom: 55px;
+    text-align: center;
+}
+.work-data-container{
+    display: flex;
+    justify-content: space-around;
+}
+.work-item-container{
+    padding: 0 10px;
+    flex-basis: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.work-item-upper-section{
+    display: flex;
+    height: 140px;
+    margin-bottom: 95px;
+}
+.work-item-upper-section h2{
+    display: flex;
+    align-items: center;
+    font-size: 100px;
+    line-height: normal;
+    margin: 24px 27px 30px 0;
+    font-weight: 700;
+}
+.work-item-upper-section h3{
+    margin: 24px 0 12px;
+    font-size: 24px;
+    color: #222222;
+    font-weight: 400px;
+}
+.work-item-upper-section p{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: start;
+    line-height: 24px;
+    color: #6f6f6f;
+}
+.work-item-bottom-section{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+    padding: 16px 0;
+    color: rgb(255, 255, 255);
+}
+.work-item-key{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: normal;
+}
+.work-item-value{
+    font-size: 27px;
+    line-height: 32px;
+    font-weight: 600;
+}
+#create-section{
+    background-image: url("https://www.wattpad.com/wp-web-assets/build/_assets/portalbg1-ZKQPKXMR.svg");
+}
+#build-section{
+    background-image: url("https://www.wattpad.com/wp-web-assets/build/_assets/portalbg2-7QVVC7SC.svg");
+}
+#amplify-section{
+    background-image: url("https://www.wattpad.com/wp-web-assets/build/_assets/portalbg3-NF26DOK2.svg");
+}
+.work-pera-tag{
+    margin-bottom: 105px !important;
+    font-size: 14px;
+    color: #6f6f6f;
+}
+
+/* (05) Slider section */
+.book-slider-section{
+    background: url("https://www.wattpad.com/wp-web-assets/build/_assets/carousel-bg-REMDEWEO.svg") center bottom no-repeat;
+    background-size: 100%;
+    background-color: #ffffff;
+    padding: 76px 0 87px;
+    display: flex;
+    justify-content: center;
+}
+.slider-inner-main-container{
+    width: 960px;
+    max-width: 1140px;
+    height: auto;
+}
+.slider-container{
+    position: relative;
+}
+.next-arrow-btn-container{
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+}
+.slider-controller-btn{
+    pointer-events: auto;
+}
+.slider-controller-btn button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.slider-indicater-bar{
+    align-items: flex-end;
+    justify-content: flex-end;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    pointer-events: none;
+}
+.slider-controller-bar{
+    pointer-events: auto;
+}
+.slider-conroller-item{
+    display: inline-block;
+    width: 60px;
+    height: 10px;
+    background-color: #ff6122;
+    opacity: .5;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.conroller-opacity{
+    opacity: 1;
+}
+.sliding-book-container{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    outline: none;
+    touch-action: pan-y;
+    height: auto;
+    transition: height 300ms ease-in-out;
+    will-change: height;
+    user-select: none;
+}
+.sliding-book-inner-container{
+    height: 400px;
+    width: 100%;
+    display: flex;
+}
+.sliding-book-item{
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    padding: 0;
+}
+.slide-item-inner{
+    height: 475px;
+    align-items: flex-start;
+    display: flex;
+    padding-right: 71px;
+}
+.slider-link{
+    flex-basis: 370px;
+    flex-shrink: 0;
+    background-color: transparent;
+    align-self: center;
+    padding: 0;
+}
+.slider-link img{
+    width: 90%;
+}
+.book-info-container{
+    padding: 0 10px 0 10px;
+}
+.quato-section{
+    position: relative;
+}
+.quato-section::before{
+    content: "";
+    width: 66px;
+    height: 77px;
+    background: url("https://www.wattpad.com/wp-web-assets/build/_assets/quote-HFHD76IR.svg") no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 0;
+    left: -90px;
+}
+.quto{
+    color: #222222;
+    font-size: 20px;
+    line-height: 36px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.author-name{
+    text-align: right;
+    font-size: 20px;
+    line-height:40px;
+    color: #948f8b;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.author-name::before{
+    content: "\2014";
+    margin-right: 10px;
+}
+.book-description{
+    font-size: 14px;
+    line-height: 28px;
+    color: #6f6f6f;
+    margin-bottom: 12px;
+}
+.link-slider-style{
+    color: #222222;
+    text-decoration: none;
+}
+.link-slider-style button{
+    display: block;
+    position: absolute;
+    bottom: 0;
+    color: rgb(255, 255, 255);
+    background-color: #00b2b2;
+    border-color: transparent;
+    padding: 5px 25px;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 6px;
+    margin: 3px 5px;
+    cursor: pointer;
+    transition: all .5s linear;
+}
+.link-slider-style button:hover{
+    background-color: #03a9a9;
+}
+
+/* (06) Discover Section */
+.discover-section{
+    background-color: #fafafa;
+    padding: 60px 0 67px;
+}
+.content-section-discover{
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.content-section-discover h3{
+    color: #222222;
+    font-size: 30px;
+    margin-bottom: 67px;
+}
+.discover-containers{
+    display: flex;
+    justify-content: space-between;
+}
+.discover-links{
+    position: relative;
+    flex-basis: 322px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.discover-img-section{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.discover-img-section::after{
+    content: "";
+    width: 295px;
+    height: 295px;
+    position: absolute;
+    z-index: -1;
+    background-color: #00b2b2;
+    bottom: -12px;
+    right: 0;
+}
+.discover-content-section{
+    margin-top: 60px;
+    padding: 0 14px;
+    max-width: 295px;
+}
+.discover-content-section h4{
+    color: #222222;
+    transition: .4s ease-in-out;
+    font-size: 20px;
+    margin: 12px 0;
+}
+.discover-content-section p{
+    color: #6f6f6f;
+    line-height: 24px;
+}
+.discover-links:hover h4{
+    color: #00b2b2;
+}
+
+/* (07) partnershin */
+.partnership-container{
+    background-color: #2a1c60;
+    height: 269px;
+    overflow: hidden;
+    position: relative;
+}
+.partnership-logo{
+    width: 696px;
+    transform: rotate(11.19deg) translate(8px,34px);
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    z-index: 0;
+}
+.partnership-data-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    color: #f6f2ff;
+    height: 100%;
+}
+.partnership-data-container h2{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    margin-bottom: 0;
+}
+.partnership-data-container p{
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    margin-top: 10px;
+}
+.learn-more{
+    margin-top: 26px;
+    background: rgb(255, 255, 255);
+    color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 0px 24px;
+    border: none;
+    cursor: pointer;
+    min-height: 40px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* (08) Bottom hero section */
+.bottom-hero-section{
+    background: url("../assets/wattpad-wall-J6RV43P6.png") center no-repeat;
+    background-size: cover;
+    background-color: var(--ds-neutral-00);
+    padding-top: 62px;
+    margin-bottom: 60px;
+}
+.bottom-hero-inner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 60pc;
+}
+.bottom-hero-inner-container h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-top: 24px;
+    margin-bottom: 12px;
+    color: rgb(255, 255, 255);
+}
+.bottom-hero-inner-container p{
+    margin: 0 0 40px;
+}
+.hero-btn-container{
+    margin-bottom: 50px;
+}
+.hero-btn-container button{
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    user-select: none;
+    transition: all .1s ease-in-out;
+    position: relative;
+    padding: 5px 25px;
+    font-size: 16px;
+    line-height: 30px;
+    border-radius: 6px;
+    margin: 3px 5px;
+    color: #fff;
+    background-color: #ff6122;
+    border-color: transparent;
+    min-width: 170px;
+    width: 215px;
+}
+.hero-btn-container button:first-child{
+    margin-right: 20px;
+}
+
+.bottom-hero-inner-container img{
+    width: 100%;
+    vertical-align: middle;
+    border: 0;
+}
+
+/* (09) black space */
+.blank-space{
+    content: "";
+    margin-top: -160px;
+    height: 160px;
+    background-color: rgb(255, 255, 255);
+}
