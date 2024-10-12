@@ -1,0 +1,33 @@
+.footer-section{
+    font-size: calc(16px * .8125);
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+}
+.footer-list{
+    line-height: 24px;
+    margin: 0 40px 8px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row-wrap;
+    list-style: none;
+}
+.footer-list p{
+    margin: 0;
+    font-size: 10px;
+}
+.footer-top{
+    color: #222222;
+}
+.footer-links{
+    color: inherit;
+    margin: 0 8px;
+    text-decoration: none;
+    transition: .5 linear all;
+}
+.footer-links:hover{
+    text-decoration: underline;
+}
+.footer-bottom-list{
+    color: #6f6f6f;
+}
