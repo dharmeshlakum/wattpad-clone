@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "../components/navbar/Navbar";
+import Footer from "../components/footer/Footer";
 
 const Navigator: React.FC = () => {
 
@@ -10,6 +11,7 @@ const Navigator: React.FC = () => {
             <Routes>
                 
             </Routes>
+            <Footer />
         </>
     )
 }
