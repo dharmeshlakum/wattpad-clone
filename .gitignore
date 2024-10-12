@@ -1,0 +1,58 @@
+# Node.js dependencies
+/node_modules/
+/client/node_modules/
+/server/node_modules/
+
+# Build output (React build and server build)
+client/build/
+server/build/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# React specific
+/client/.env
+/client/.env.local
+/client/.env.development
+/client/.env.production
+/client/.env.test
+
+# Server specific
+/server/.env
+/server/.env.local
+/server/.env.development
+/server/.env.production
+/server/.env.test
+
+# IDE and editor config
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.log
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Test coverage output
+/client/coverage/
+/server/coverage/
+
+# NPM package lock files (optional: if you use yarn or npm, you might want to keep these)
+package-lock.json
+yarn.lock
+
+# Optional: ignore npm audit report files
+npm-audit.json
+
+# Miscellaneous
+*.tgz
