@@ -6,6 +6,7 @@ import { useAuthFormContext } from "../context/formContext/AuthFormContext";
 import { useAuthContext } from "../context/authContext/AuthContext";
 import Homepage from "../pages/Homepage";
 import RootPage from "../pages/Rootpage";
+import Authentication from "../components/authentication/Authentication";
 
 const Navigator: React.FC = () => {
 
@@ -14,6 +15,7 @@ const Navigator: React.FC = () => {
 
     useEffect(() => {
         const rawToken = localStorage.getItem("auth-token");
+        console.log(rawToken)
         if (rawToken) {
             const rawUserdata = localStorage.getItem("user");
             if (rawUserdata) {
@@ -34,9 +36,10 @@ const Navigator: React.FC = () => {
     return (
         <>
             <Navbar />
+            <Authentication type={formType} />
             <Routes>
-            <Route path="/" element={<RootPage />} />
-            <Route path="/home" element={token ? <Homepage /> : <Navigate to="/" />} />
+                <Route path="/" element={token ? <Navigate to="/home" /> : <RootPage />} />
+                <Route path="/home" element={token ? <Homepage /> : <Navigate to="/" />} />
             </Routes>
             <Footer />
         </>
