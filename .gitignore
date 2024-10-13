@@ -58,4 +58,4 @@ npm-audit.json
 *.tgz
 
 # Ignore all image files in server/src/assets
-/server/src/assets/*.{png,jpg,jpeg,gif,svg,bmp,tiff,webp,ico,heic}
+/server/src/assets/**/*/.{png,jpg,jpeg,gif,svg,bmp,tiff,webp,ico,heic}
