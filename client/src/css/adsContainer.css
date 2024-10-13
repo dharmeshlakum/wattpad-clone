@@ -1,0 +1,15 @@
+.ads-container{
+    position: relative;
+    padding: 0 8px;
+    margin-top: 60px;
+    display: block;
+}
+.ads-sticky{
+    position: static;
+    top: 60px;
+}
+.link-class{
+    color: #222222;
+    text-decoration: none;
+    background: 0 0;
+}
