@@ -73,7 +73,7 @@ const AuthSection: React.FC<PropsType> = ({ dropdown, handleDropdown, handleNavi
                             <button className="drop-down-user-btn" onClick={() => handleDropdown('user')}>
                                 <div className="avatar">
                                     <span className="notification-bedge"></span>
-                                    <img src={`${url}/user/images/${user?.avatar}`} alt="" />
+                                    <img src={`${url}/user/profile-pic/${user?.avatar}`} alt="" />
                                 </div>
                                 <div className="down-arrow"></div>
                             </button>
