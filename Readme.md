@@ -31,7 +31,6 @@
 - **Likes/Dislikes**: Users can like or dislike stories based on their preferences.
 - **Comments**: Users can leave comments on stories to interact with writers and other readers.
 - **User Profiles**: Each user has a personalized profile displaying their stories.
-- **Responsive UI**: The application is responsive and works well on desktop and mobile devices.
 
 ---
 
@@ -40,8 +39,6 @@
 - **Frontend**:
   - **React.js**: JavaScript library for building user interfaces.
   - **React Router**: For managing navigation between pages.
-  - **Axios**: For making API calls to the backend server.
-  - **Bootstrap** or **Material UI**: For responsive, pre-built UI components.
 
 - **Backend**:
   - **Node.js**: JavaScript runtime for building the server.
