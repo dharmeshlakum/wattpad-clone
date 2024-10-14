@@ -8,6 +8,7 @@ import Homepage from "../pages/Homepage";
 import RootPage from "../pages/Rootpage";
 import Authentication from "../components/authentication/Authentication";
 import MissingPage from "../components/missingPage/MissingPage";
+import StoryList from "../components/storyList/StoryList";
 
 const Navigator: React.FC = () => {
 
@@ -41,6 +42,7 @@ const Navigator: React.FC = () => {
             <Routes>
                 <Route path="/" element={token ? <Navigate to="/home" /> : <RootPage />} />
                 <Route path="/home" element={token ? <Homepage /> : <Navigate to="/" />} />
+                <Route path="/stories/:storyName" element={<StoryList />} />
                 <Route path="*" element={<MissingPage />} />
             </Routes>
             <Footer />
