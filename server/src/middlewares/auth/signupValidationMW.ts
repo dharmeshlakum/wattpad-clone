@@ -6,11 +6,11 @@ import passwordValidationFN from "../../services/validation/passwordValidatio";
 const signupValidationMW = async (req: Request, res: Response, next: NextFunction) => {
 
     try {
-        const { username, password, emailAddress, fulName } = req.body;
+        const { username, password, emailAddress, fullName } = req.body;
         const regax = /@gmail\.com/;
 
         // check if all data is comming from the client side
-        if (!username || !password || !emailAddress || !fulName) {
+        if (!username || !password || !emailAddress || !fullName) {
             res.status(400).json({
                 success: false,
                 message: "All fields are required !"
