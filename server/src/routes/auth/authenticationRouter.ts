@@ -8,8 +8,14 @@ import emailValidationMW from "../../middlewares/auth/emailValidationMW";
 import { generateTokenFN } from "../../services/token/tokenServices";
 import loginModel from "../../models/logins/loginCollection";
 import { dataVerificationFN } from "../../services/hashing/dataHashing";
+import loginValidationMW from "../../middlewares/auth/loginValidationMW";
 
 const authRouter = express.Router();
+
+// interface to implement user
+interface UserImplementRequest extends Request {
+    user?: IUsers
+}
 
 // sign api
 authRouter.post("/auth/signup", signupValidationMW, async (req: Request, res: Response) => {
@@ -61,13 +67,9 @@ authRouter.post("/auth/signup", signupValidationMW, async (req: Request, res: Re
         });
     }
 });
-// interfac to implement user
-interface CustomRequest extends Request {
-    user?: IUsers
-}
 
 // activate account
-authRouter.post("/auth/activate", emailValidationMW, async (req: CustomRequest, res: Response) => {
+authRouter.post("/auth/activate", emailValidationMW, async (req: UserImplementRequest, res: Response) => {
 
     try {
         const { emailAddress } = req.cookies;
@@ -148,6 +150,48 @@ authRouter.post("/auth/activate", emailValidationMW, async (req: CustomRequest, 
 
     } catch (error: any) {
         console.log("Account activation function error :", error);
+        res.status(500).json({
+            success: false,
+            message: "Internal server error !"
+        });
+    }
+});
+
+// login api
+authRouter.post("/auth/login", loginValidationMW, async (req: UserImplementRequest, res: Response) => {
+
+    try {
+        // get user details from the request
+        const { user } = req;
+        if (!user) {
+            res.status(500).json({
+                success: false,
+                message: "Internal server error !"
+            });
+            return;
+        }
+
+        const token = generateTokenFN({ id: user._id });
+        const userAgent = req.headers["user-agent"];
+        const ipAddress = getIPaddress(req);
+
+        const loginData = new loginModel({
+            token,
+            userId: user?._id,
+            userAgent,
+            ipAddress
+        });
+        await loginData.save();
+
+        res.status(200).json({
+            success: true,
+            message: "Email successfully verified.",
+            userId: user._id,
+            token
+        });
+
+    } catch (error: any) {
+        console.log("Login api error :", error);
         res.status(500).json({
             success: false,
             message: "Internal server error !"
