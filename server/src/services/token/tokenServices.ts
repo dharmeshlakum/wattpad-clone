@@ -19,19 +19,26 @@ interface ReturnTypes {
     token: JwtPayload
 }
 
+interface CustomJwtPayload extends JwtPayload {
+    exp?: number
+}
+
 // function to validate the token
 const tokenVerificationFN = (token: string): ReturnTypes => {
 
     try {
-        const verification = jwt.verify(token, process.env.TOKEN_SECRET_KEY as Secret);
+        const verification = jwt.verify(token, process.env.TOKEN_SECRET_KEY as Secret) as CustomJwtPayload;
         return {
             isValid: true,
-            token: verification as JwtPayload
+            token: verification
         }
 
     } catch (error: any) {
         console.log("Token verification function error :", error);
-        return error;
+        return {
+            isValid: false,
+            token: null as any
+        };
     }
 }
 
