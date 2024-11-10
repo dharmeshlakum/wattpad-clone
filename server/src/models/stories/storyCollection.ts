@@ -10,6 +10,7 @@ interface IStories extends Document {
     category: string;
     copyright: string;
     status: string;
+    views: number;
     tags: string[];
     chaptersPublished: Number;
     totalChapters: Number;
@@ -80,6 +81,11 @@ const storyCollectionSchema = new Schema<IStories>({
         default: "ongoing"
     },
 
+    views: {
+        type: Number,
+        default: 0
+    },
+
     tags: [{
         type: String,
         default: []
@@ -130,4 +136,7 @@ const storyCollectionSchema = new Schema<IStories>({
         type: Date,
         default: Date.now
     }
-})
+});
+
+const storyModel = model("Stories", storyCollectionSchema);
+export default storyModel;
