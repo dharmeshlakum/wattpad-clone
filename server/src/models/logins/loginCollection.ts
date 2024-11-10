@@ -1,7 +1,7 @@
 import mongoose, { Document, Schema, model } from "mongoose";
 
 // interface to define the schema type
-interface ILogin {
+interface ILogin extends Document {
     userId: mongoose.Schema.Types.ObjectId,
     userAgent: string;
     ipAddress: string;
