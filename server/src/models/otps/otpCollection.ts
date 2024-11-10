@@ -2,7 +2,7 @@ import mongoose, { Document, Schema, model } from "mongoose";
 import { dataHashingFN } from "../../services/hashing/dataHashing";
 
 // interface to define the schema types
-interface IOtp {
+interface IOtp extends Document {
     emailAddress: string;
     otp: string;
     userAgent: string;
