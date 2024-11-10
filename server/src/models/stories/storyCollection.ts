@@ -17,6 +17,7 @@ interface IStories extends Document {
     contentWarnings: string;
     likes: mongoose.Schema.Types.ObjectId[];
     language: string;
+    isDeleted: boolean;
     isDraft: boolean;
     isMature: boolean;
     lastUpdated: Date;
@@ -115,6 +116,11 @@ const storyCollectionSchema = new Schema<IStories>({
         type: String,
         enum: ["English", "Spanish", "Mandarin Chinese", "Hindi", "Arabic", "Portuguese", "Bengali", "Russian", "Japanese", "Punjabi", "German", "French", "Turkish", "Korean", "Italian", "Vietnamese", "Urdu", "Persian", "Polish", "Dutch", "Indonesian", "Thai", "Swedish", "Greek", "Czech"],
         default: "English"
+    },
+
+    isDeleted: {
+        type: Boolean,
+        default: false
     },
 
     isDraft: {
